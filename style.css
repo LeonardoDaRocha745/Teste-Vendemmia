@@ -1,45 +1,72 @@
-.gradient-custom-2 {
+.DegradeVendemmia {
 
-background-image: linear-gradient(
-  55deg,
-  hsl(261deg 48% 33%) 0%,
-  hsl(278deg 49% 34%) 31%,
-  hsl(294deg 52% 35%) 48%,
-  hsl(308deg 58% 37%) 62%,
-  hsl(317deg 66% 41%) 73%,
-  hsl(324deg 72% 45%) 83%,
-  hsl(330deg 76% 49%) 92%,
-  hsl(335deg 85% 53%) 98%,
-  hsl(342deg 100% 59%) 100%
-);
-    }
-    
-    @media (min-width: 768px) {
-    .gradient-form {
-    height: 100vh !important;
-    }
-    }
-    @media (min-width: 769px) {
-    .gradient-custom-2 {
-    border-top-right-radius: .3rem;
-    border-bottom-right-radius: .3rem;
-    }
-    }
-
-#btnEntrar{
-width: 40%; 
-margin: auto; 
-text-align: center;
+    background-image: linear-gradient(55deg,
+            hsl(261deg 48% 33%) 0%,
+            hsl(278deg 49% 34%) 31%,
+            hsl(294deg 52% 35%) 48%,
+            hsl(308deg 58% 37%) 62%,
+            hsl(317deg 66% 41%) 73%,
+            hsl(324deg 72% 45%) 83%,
+            hsl(330deg 76% 49%) 92%,
+            hsl(335deg 85% 53%) 98%,
+            hsl(342deg 100% 59%) 100%);
 }
 
-#SecLogin{
-    background:url('img/log1.jpg');
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .DegradeVendemmia {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}
+
+.imgVende {
+    transition: transform .2s;
+}
+
+.imgVende:hover {
+    transform: scale(1.2);
+}
+
+#btnEntrar {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    transition: transform .2s;
+}
+
+#btnEntrar:hover {
+    transform: scale(1.2);
+}
+
+#SecLogin {
+    background: url('img/log1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
 }
-#contLogin{
+
+#contLogin {
     width: 100%;
     height: 100vh;
+}
+
+@media (max-width: 769px) {
+    #contLogin {
+    height: auto;
+    }
+    #SecLogin {
+    height: auto; 
+    }
+}
+
+
+#mensagemErro {
+    display: none;
 }

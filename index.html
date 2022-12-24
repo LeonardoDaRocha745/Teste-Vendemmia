@@ -11,53 +11,73 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
 </head>
 
 <body>
-
+    <script>
+        AOS.init();
+    </script>
     <section id="SecLogin">
         <div id="contLogin" style="background-color: rgba(72, 44, 124, 0.767);">
-        <div class="container py-5 h-100">
-            <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col-xl-10">
-                    <div class="card rounded-3 text-black">
-                        <div class="row g-0">
-                            <div class="col-lg-6">
-                                <div class="card-body p-md-5 mx-md-4">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-xl-10">
+                        <div data-aos="zoom-in" class="card rounded-3 text-black">
+                            <div class="row g-0">
+                                <div class="col-lg-6">
+                                    <div class="card-body p-md-5 mx-md-4">
 
-                                    <div class="text-center">
-                                        <img src="img/vendemmia.png" style="width: 185px;" alt="logo">
-                                        <h4 class="mt-1 mb-5 pb-1">Vendemmia Logística Integrada</h4>
-                                    </div>
-
-                                    <form  class="text-center">
-                                        <p>Faça o login na plataforma</p>
-
-                                        <div class="form-outline mb-4">
-                                            <input type="email" id="form2Example11" class="form-control"
-                                                placeholder="Digite o nome do usuário" />
-                                            <label class="form-label" for="form2Example11">Usuário</label>
-                                        </div>
-
-                                        <div class="form-outline mb-4">
-                                            <input type="password" id="form2Example22" class="form-control" />
-                                            <label class="form-label" for="form2Example22">Senha</label>
-                                        </div>
-                                                    
                                         <div class="text-center">
-                                            <button id="btnEntrar" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
-                                                type="button">Entrar</button>
+                                            <a href="https://vendemmia.com.br/">
+                                                <img class="imgVende" src="img/vendemmia.png" style="width: 185px;"
+                                                    alt="logo">
+                                            </a>
+                                            <h4 class="mt-1 mb-3 pb-1">Vendemmia Logística Integrada</h4>
                                         </div>
+                                        <form class="text-center">
+                                            <p>Faça o login na plataforma</p>
 
-                                    </form>
+                                            <div class="form-outline mb-4">
+                                                <input id="Usuario" type="email" id="form2Example11"
+                                                    class="form-control" placeholder="Digite o nome do usuário" />
+                                                <label class="form-label" for="form2Example11">Usuário</label>
+                                            </div>
 
+                                            <div class="form-outline mb-4">
+                                                <input id="Senha" type="password" id="form2Example22"
+                                                    class="form-control" />
+                                                <label class="form-label" for="form2Example22">Senha</label>
+                                            </div>
+
+                                            <div id="mensagemErro" class="alert alert-danger" role="alert">
+                                                <strong>Usuário ou senha inválidos</strong>
+                                            </div>
+
+                                            <div class="text-center">
+                                                <button onclick="validacao()" id="btnEntrar"
+                                                    class="btn btn-primary btn-block fa-lg DegradeVendemmia mb-3"
+                                                    type="button">Entrar</button>
+                                            </div>
+
+                                        </form>
+
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
-                                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                                    <h4 class="mb-4">Especialista em logística integrada no Brasil</h4>
-                                    <p class="small mb-0">A Vendemmia tem grande experiência em 4PL no Brasil, aplicando tecnologia e inteligência logística nos mais variados processos – armazenagem, importação, desembaraço aduaneiro, gestão de estoque, transporte e exportação.</p>
+                                <div class="col-lg-6 d-flex align-items-center DegradeVendemmia">
+                                    <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                                        <h4 class="mb-4">Especialista em logística integrada no Brasil</h4>
+                                        <p class="small mb-0">A Vendemmia tem grande experiência em 4PL no Brasil,
+                                            aplicando tecnologia e inteligência logística nos mais variados processos –
+                                            armazenagem, importação, desembaraço aduaneiro, gestão de estoque,
+                                            transporte e exportação.</p>
+                                        <br>
+                                        <p>Nosso propósito é conexão. Não importa o tamanho do projeto, o tipo de
+                                            percurso ou a extensão da estrada, acreditamos que juntos podemos mais e que
+                                            os limites se alargam quando nos damos as mãos.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -65,10 +85,9 @@
                 </div>
             </div>
         </div>
-    </div>
     </section>
 
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
 
 </body>
 
