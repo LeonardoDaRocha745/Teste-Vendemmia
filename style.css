@@ -52,21 +52,112 @@
     height: 100vh;
 }
 
-#contLogin {
+#secLista {
+    background: url('img/log1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100vh;
 }
 
-@media (max-width: 769px) {
-    #contLogin {
-    height: auto;
-    }
-    #SecLogin {
-    height: auto; 
-    }
+#contLista {
+    background-color: rgba(72, 44, 124, 0.767);
+    width: 100%;
+    height: 100vh;
 }
 
 
+#contLogin {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(72, 44, 124, 0.767);
+}
+
+@media (max-width: 769px) {
+    #contLogin {
+        height: auto;
+    }
+
+    #SecLogin {
+        height: auto;
+    }
+}
+
 #mensagemErro {
     display: none;
+}
+
+#card {
+    background-color: #fff;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+#tabela {
+    width: 50%;
+    border-radius: 15px;
+    margin: auto;
+}
+
+thead {
+    display: block;
+    text-align: center;
+}
+
+#tabela tbody {
+    display: block;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+td {
+    width: 40%;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(55deg,
+            hsl(261deg 48% 33%) 0%,
+            hsl(278deg 49% 34%) 31%,
+            hsl(294deg 52% 35%) 48%,
+            hsl(308deg 58% 37%) 62%,
+            hsl(317deg 66% 41%) 73%,
+            hsl(324deg 72% 45%) 83%,
+            hsl(330deg 76% 49%) 92%,
+            hsl(335deg 85% 53%) 98%,
+            hsl(342deg 100% 59%) 100%);
+    border-radius: 10px;
+}
+
+.txtTabela {
+    font-size: 18px;
+    color: black;
+}
+
+.imgIcone {
+    border-radius: 50%;
+}
+
+@media (max-width: 769px) {
+    .txtTabela {
+        font-size: 10px;
+    }
+
+    .imgIcone {
+        width: 50px;
+        height: 50px;
+    }
 }
