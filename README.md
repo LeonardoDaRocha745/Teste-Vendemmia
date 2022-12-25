@@ -1,3 +1,3 @@
 # Teste-Vendemmia
 Teste de consumo de API da Vendemmia 
-Essa aplicação foi feita puramente no Javascript sem qualquer uso de framework, para mostrar os conhecimentos sólidos do Javascript
+Essa aplicação foi feita puramente no Javascript sem qualquer uso de framework, para mostrar os conhecimentos sólidos do Javascript, Você pode baixar o projeto e rodar localmente em sua máquina ou acessando o link: https://leonardodarocha745.github.io/Teste-Vendemmia/
