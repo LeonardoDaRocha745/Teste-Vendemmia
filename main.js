@@ -57,7 +57,7 @@ fetch(url)
         for (let usuario of usuarios) {
             conteudo += `
 			<tr>
-				<td><img class ='imgIcone'src='${usuario.avatar}'></td>
+				<td><a target='_blank' href='https://63a1c51eba35b96522e7a1b1.mockapi.io/vdm/Users/${usuario.id}'><img class ='imgIcone'src='${usuario.avatar}'></a></td>
 				<td><p class='txtTabela'>${usuario.name}</p></td>
 				<td><p class='txtTabela'>${usuario.createdAt}</p></td>
 			</tr>
